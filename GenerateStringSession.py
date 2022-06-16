@@ -1,3 +1,6 @@
+# Bu Kod @SakirBey1 Tarafından Yazılıp Sunucularına Dağıtılmaktadır
+
+
 import asyncio
 import os
 import sys
