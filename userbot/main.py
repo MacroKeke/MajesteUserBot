@@ -177,7 +177,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    herlockbl = requests.get('https://github.com/MacroKeke/datas/blob/main/blacklist.json').json()
+    herlockbl = requests.get('https://raw.githubusercontent.com/MacroKeke/datas/main/blacklist.json').json()
     if idim in herlockbl:
         bot.send_message("me", f"`❌ Majeste yöneticileri sizi bottan yasakladı! Bot kapatılıyor...`")
         LOGS.error("Majeste yöneticileri sizi bottan yasakladı! Bot kapatılıyor...")
