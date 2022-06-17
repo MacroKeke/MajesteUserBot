@@ -222,7 +222,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm Modülü
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@MajesteUserBott | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@MajesteUserBot | ")
 #DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -311,7 +311,7 @@ if os.path.exists("force-update.check"):
 else:
     LOGS.info("Force Update Kontrol dosyası yok, getiriliyor...")
 
-URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/force-update.check' 
+URL = 'https://raw.githack.com/MacroKeke/datas/main/force-update.check' 
 with open('force-update.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -360,7 +360,7 @@ else:
 
 DEVS = 1948748468, 1526305215, #developer ayrıcalıkları olacak
 
-PREMIUM = get('https://raw.githubusercontent.com/SakirBey1/Datas/main/premium.json').json() # Premium Üyelerin ID 
+PREMIUM = get('https://raw.githubusercontent.com/MacroKeke/datas/main/premium.json').json() # Premium Üyelerin ID 
 
 ASISTAN = 5335105873 # Bot yardımcısı
 
@@ -369,7 +369,7 @@ if os.path.exists("learning-data-root.check"):
 else:
     LOGS.info("Braincheck dosyası yok, getiriliyor...")
 
-URL = 'https://rawcdn.githack.com/SakirBey1/Datas/e4ff3671efa2409eaeba4e7184c5d3bed9ab2ea9/learning-data-root.check'
+URL = 'https://raw.githack.com/MacroKeke/datas/main/learning-data-root.check'
 with open('learning-data-root.check', 'wb') as load:
     load.write(get(URL).content)
     
@@ -447,13 +447,7 @@ with bot:
     
 
     try:
-        bot(LeaveChannelRequest("@SiriSupport"))
-        bot(LeaveChannelRequest("@siriot"))
-        bot(LeaveChannelRequest("@jokerpluginn"))
-        bot(LeaveChannelRequest("@siriaddon"))
-        bot(JoinChannelRequest("@majesteuserbot"))
-        bot(JoinChannelRequest("@majestesupport"))
-        bot(JoinChannelRequest("@majesteplugin"))
+        bot(JoinChannelRequest("@MajesteSupport"))
         bot(JoinChannelRequest("@SakirBey2"))
         bot(JoinChannelRequest("@Sakirhackofficial99"))
         bot(JoinChannelRequest("@Sakirhackoficial99"))
