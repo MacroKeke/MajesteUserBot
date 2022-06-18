@@ -107,8 +107,8 @@ async def upstream(ups):
         return
 
     if conf != "now" and not force_update:
-        HerlockVer = int(MAJESTE_VERSION.split(".")[1])
-        if HerlockVer < upVer:
+        MajesteVer = int(MAJESTE_VERSION.split(".")[1])
+        if MajesteVer < upVer:
           await ups.edit(f"**Lütfen Majeste yöneticileri izin vermeden güncelleme yapmaya çalışma\n Botun bozulabilir\n Güncelleme kanalım :** @MajesteUserBot")
           return
         changelog_str = LANG['WAS_UPDATE'].format(ac_br, changelog)
@@ -406,7 +406,7 @@ async def asistan_update(ups):
 @register(outgoing=True, pattern=r"^\.er(?: |$)(.*)")
 async def upstream(ups):
     MajesteVer = int(MAJESTE_VERSION.split(".")[1])
-    if MajestekVer < upVer:
+    if MajesteVer < upVer:
      await ups.edit(f"**Lütfen majeste yöneticileri izin vermeden güncelleme yapmaya çalişma\n Botun bozulabilir\n Güncelleme kanali :** @MajesteUserBot") #Tek developer by : @SakirBey1
      return
     await ups.edit(LANG['DETECTING'])
