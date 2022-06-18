@@ -150,7 +150,7 @@ async def amialive(e):
                 first_name=me.first_name,
                 last_name=me.last_name if me.last_name else '',
                 mention=f'[{me.first_name}](tg://user?id={me.id})',
-                herlocksahip = sahipp
+                majestesahip = sahipp
             ))
         else:
             await e.delete()
@@ -165,7 +165,7 @@ async def amialive(e):
                     first_name=me.first_name,
                     last_name=me.last_name if me.last_name else '',
                     mention=f'[{me.first_name}](tg://user?id={me.id})',
-                    herlocksahip = sahipp
+                    majestesahip = sahipp
                 )
             if e.is_reply:
                 await e.respond(PLUGIN_MESAJLAR['alive'], reply_to=e.message.reply_to_msg_id)
