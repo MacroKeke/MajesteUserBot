@@ -17,7 +17,7 @@ from userbot.events import register
 from userbot import DEFAULT_NAME
 from userbot.cmdhelp import CmdHelp
 
-# credits: https://github.com/TeamUltroid/Ultroid/blob/main/plugins/logo.py
+# credits: SakirBey
 
 @register(outgoing=True, pattern=r"^\.logo(?: |$)(.*)")
 async def logo_gen(event):
@@ -85,14 +85,14 @@ async def logo_gen(event):
     draw.text(
         (x, y), ad, font=font, fill="white", stroke_width=strke, stroke_fill="black"
     )
-    fayladi = f"herlock.png"
+    fayladi = f"majeste.png"
     img.save(fayladi, "png")
     await event.edit("`Hazırlanıyor...`")
     if os.path.exists(fayladi):
         await event.client.send_file(
             event.chat_id,
             file=fayladi,
-            caption=f"[HerlockUserBot](https://t.me/herlockuserbot1) **{DEFAULT_NAME}** için logo hazırladı.",
+            caption=f"[MajesteUserBot](https://t.me/majesteuserbot) **{DEFAULT_NAME}** için logo hazırladı.",
             force_document=True,
         )
         os.remove(fayladi)
@@ -104,6 +104,6 @@ async def logo_gen(event):
             os.remove(font_)
 
 Help = CmdHelp('logo')
-Help.add_command('logo', '<yazı>', '@HerlockUserBot1 sizin için logo hazırlar.')
-Help.add_info('@HerlockUserBot1 - @SakirBey2 ')
+Help.add_command('logo', '<yazı>', '@MajesteUserBot sizin için logo hazırlar.')
+Help.add_info('@HMajesteUserBot - @SakirBey2 ')
 Help.add() 
