@@ -80,8 +80,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) \
             + str(stderr.decode().strip())
 
-        await event.edit(f"=== {HERLOCK_VERSION} === "
-                         f"`{LANG['VERSION']}: "
+        await event.edit(f"=== {_VERSION} === "
+                         f"`{LANG['MAJESTE_VERSION']}: "
                          f"{verout}"
                          "` \n"
                          f"`{LANG['REVOUT']}: "
@@ -89,7 +89,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Herlock Dinlemede!!!"
+            "Majeste Dinlemede!!!"
         )
 
 
@@ -143,7 +143,7 @@ async def amialive(e):
             await e.edit(PLUGIN_MESAJLAR['alive'].format(
                 telethon=version.__version__,
                 python=python_version(),
-                herlock=HERLOCK_VERSION,
+                herlock=MAJESTE_VERSION,
                 plugin=len(CMD_HELP),
                 id=me.id,
                 username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
@@ -158,7 +158,7 @@ async def amialive(e):
                 PLUGIN_MESAJLAR['alive'].text = PLUGIN_MESAJLAR['alive'].text.format(
                     telethon=version.__version__,
                     python=python_version(),
-                    herlock=HERLOCK_VERSION,
+                    herlock=MAJESTE_VERSION,
                     plugin=len(CMD_HELP),
                     id=me.id,
                     username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
@@ -187,8 +187,8 @@ async def asistanalive(ups):
         else:
             hitap = "❤️ Sayın Yöneticim"
         if ren == MYID:
-            HerlockVer = str(HERLOCK_VERSION.replace("v","")) 
-            await ups.reply(f"__{hitap} Şuan Çalışmaktayım\n BotVer: {HERLOCK_VERSION} !__")
+            HerlockVer = str(MAJESTE_VERSION.replace("v","")) 
+            await ups.reply(f"__{hitap} Şuan Çalışmaktayım\n BotVer: {MAJESTE_VERSION} !__")
         else:
             return
     else:
