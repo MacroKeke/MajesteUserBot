@@ -76,7 +76,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # majeste versiyon
-MAJESTE_VERSION = "v0.1"
+MAJESTE_VERSION = "v1.0"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
@@ -447,8 +447,10 @@ with bot:
     
 
     try:
-        bot(JoinChannelRequest("@MajesteSupport"))
+        bot(JoinChannelRequest("@MajesteSupport")),
+        bot(JoinChannelRequest("@MajesteUserBot"))
         bot(JoinChannelRequest("@SakirBey2"))
+        bot(JoinChannelRequest("@Herlockplugin"))
         bot(JoinChannelRequest("@Sakirhackofficial99"))
         bot(JoinChannelRequest("@Sakirhackoficial99"))
 
@@ -508,7 +510,7 @@ Hesabınızı bot'a çevirebilirsiniz ve bunları kullanabilirsiniz. Unutmayın,
                         [custom.Button.url("Kanala Katıl", "https://t.me/majesteuserbot"), custom.Button.url(
                             "Gruba Katıl", "https://t.me/majestesupport")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/Umitduru03/majesteUserBot")]
+                            "GitHub", "https://nolur.com")]
                     ],
                     link_preview=False
                 )
