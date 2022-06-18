@@ -153,7 +153,7 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # MAJESTEPY
+            # MAJESTEPY  Bu Bir Majeste Plugini                                                                                                                          A,Ü,G,Ğ,E
             Majestepy = re.search('\"\"\"MAJESTEPY(.*)\"\"\"', FileRead, re.DOTALL)
             if not Majestepy == None:
                 Majestepy = Majestepy.group(0)
