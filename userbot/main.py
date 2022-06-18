@@ -36,6 +36,7 @@ ALIVE_MSG = [
     "✨ `MajesteUserBot sahibinin emirlerine hazır...` \n Bot Versiyonu: {majeste} ",
     "`Şuan en gelişmiş userbotun düzenlediği mesajı okuyor olmalısın` **{majestesahip}**. \n Bot Versiyonu: {majeste} ",
     "`Benimi Aramıştın ❓ Ben Buradayım Merak Etme` \n Bot Versiyonu: {majeste} "
+    "**Hey {majestesahip} Beni mi Aramıştın Ben Burdayım 7/24 Emrine Amedeyim**"
 ]
 
 DIZCILIK_STR = [
