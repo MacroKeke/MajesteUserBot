@@ -1,6 +1,6 @@
 # Termux Kurulum 
 
-```bash <(curl -L https://bit.ly/3zFDAMP)```
+```bash <(curl -L https://bit.ly/3xGvl0s)```
 
 
 # Destek / support
