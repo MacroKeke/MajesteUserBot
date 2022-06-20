@@ -447,7 +447,7 @@ with bot:
     
 
     try:
-        bot(JoinChannelRequest("@MajesteSupport")),
+        bot(JoinChannelRequest("@Majeste_Support")),
         bot(JoinChannelRequest("@MajesteUserBot"))
         bot(JoinChannelRequest("@SakirBey2"))
         bot(JoinChannelRequest("@Herlockplugin"))
