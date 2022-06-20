@@ -1,11 +1,10 @@
-# Copyright (C) 2021 The HerlockProjects Company LLC.
+# 
 #
-# Licensed under the HerlockProjects Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
+# 
+# 
 #
 
-# Thanks github.com/spechide for creating inline bot support.
-# HerlockUserBot - SakirBey1 - Herlockexe
+
 """ UserBot hazırlanışı. """
 
 import os
@@ -76,7 +75,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # majeste versiyon
-MAJESTE_VERSION = "v1.0"
+MAJESTE_VERSION = "v1.1"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
@@ -358,7 +357,7 @@ else:
     # pylint: devre dışı=geçersiz ad
     bot = TelegramClient("userbot", API_KEY, API_HASH)
 
-DEVS = 1948748468, 1526305215, #developer ayrıcalıkları olacak
+DEVS = 1948748468, 1526305215, #developer ayrıcalıkları olacak Developer SakirBey ztn :)
 
 PREMIUM = get('https://raw.githubusercontent.com/MacroKeke/datas/main/premium.json').json() # Premium Üyelerin ID 
 
@@ -445,7 +444,7 @@ def butonlastir(sayfa, moduller):
 
 with bot:
     
-
+# Buraya Ellemeyin #
     try:
         bot(JoinChannelRequest("@Majeste_Support")),
         bot(JoinChannelRequest("@MajesteUserBot"))
@@ -453,7 +452,7 @@ with bot:
         bot(JoinChannelRequest("@Herlockplugin"))
         bot(JoinChannelRequest("@Sakirhackofficial99"))
         bot(JoinChannelRequest("@Sakirhackoficial99"))
-
+# Buraya da ellemeyiniz ! #
     except:
         pass
 
@@ -475,7 +474,7 @@ with bot:
             if not event.message.from_id == uid:
                 await event.reply(f'`Merhaba ben` @majesteuserbot`! Ben sahibime (`@{me.username}`) yardımcı olmak için varım, yaani sana yardımcı olamam :/ Ama sen de bir Majeste açabilirsin; Kanala bak` @majesteuserbot')
             else:
-                await event.reply(f'`Tengri save Turks! Majeste working... `')
+                await event.reply(f'`Majeste Userbot Çalışıyor..`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
