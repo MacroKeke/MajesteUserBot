@@ -94,3 +94,17 @@ async def get_users(event):
     return await sakir.edit(
         f"**Majeste UserBot ADDER** \n\nBaşarılı İşlem: ✔️ `{s}` .\nBaşarısız İşlem: ❌ `{f}`"
     )
+
+# SakirBey1 Modülü :)
+CmdHelp('adder').add_command(
+ 'adder', 'Komutunu Yazarak Çalıştıra Bilirsiniz.', 'Bu Plugin Başka Bi Grubtan Üye Eklemek İçindir'
+).add_info('Bu Plugin [SakirBey](t.me/SakirBey1) Tarafından [Majeste UserBot](t.me/MajesteUserBot) İçin Yazılmıştır.!').add()
+    
+    
+    # Bu plugin @SakirBey1 Tarafından yazıldı.
+    
+    
+    
+    
+    # Bu da Benim İmzam ".xd" #
+   
