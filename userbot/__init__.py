@@ -75,7 +75,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # majeste versiyon
-MAJESTE_VERSION = "v1.1"
+MAJESTE_VERSION = "v1.2"
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 # Telegram API KEY ve HASH
