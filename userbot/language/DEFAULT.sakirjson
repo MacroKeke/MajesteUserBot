@@ -980,9 +980,6 @@
             "DİL2": "'Yanıt verdiğiniz dil dosyası hakkında bilgi verir.'",
             "DİL3": "'Yanıt verdiğiniz dil dosyasını yükler.'"
         },
-        "duyuru": {
-            "DUYURU1": "'kelime/cümleleri admin olduğunuz gruptaki kişilere PM'den duyuru gönderir.'"
-        },
         "emall": {
             "EM1": "'<sebep>'",
             "EM2": "'Gruptaki Üyeleri Emojili Bir Şekilde Etiketler.'",
