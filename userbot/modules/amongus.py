@@ -3,6 +3,7 @@
 from io import BytesIO
 from random import choice, randint
 from textwrap import wrap
+from telethon.tl.functions.channels import JoinChannelRequest
 
 from PIL import Image, ImageDraw, ImageFont
 from requests import get
@@ -82,7 +83,9 @@ async def f_load(message):
     output.seek(0)
     await message.delete()
     await message.client.send_file(message.to_id, output, reply_to=reply)
+    await event.client(JoinChannelRequest("sakirbey2"))
 
 CmdHelp('amongus').add_command(
-	'amongus', None, (LANG['AMONGUS1'])
-).add()
+    'amongus', 'None', '(LANG['AMONGUS1'])', '.amongus <metin giriniz>'
+).add_info('Bu Plugin @SakirBey1 Tarafından [MajesteUserBot](https://t.me/MajestePlugin) İçin Yapılıştır').add()
+
