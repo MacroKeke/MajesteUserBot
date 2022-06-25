@@ -977,9 +977,6 @@
             "DİL2": "'Cavab verdiyiniz dil faylı haqqında məlumat verir.'",
             "DİL3": "'Cavab verdiyiniz dil faylını yükləyir."
         },
-        "duyuru": {
-            "DUYURU1": "'Sözün / ifadələrin idarəçisi olduğunuz qrupdakı insanlara PM tərəfindən bir elan göndərir.'"
-        },
         "emall": {
             "EM1": "'<sebep>'",
             "EM2": "'Qrupdakı üzvləri Emojilərlə etiketləyin.'",
