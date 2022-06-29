@@ -50,9 +50,9 @@ async def _(q):
 						import userbot.helpers.p as edit
 						edit.e_(dosya_name, name, slep, liste)
 						#file = await q.client.upload_file(f'./fg{dosya_name}.py')
-						await q.client.send_file(q.chat_id, f"./herlockuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @HerlockUserBot1 Tarafından Yapılmıştır..")
+						await q.client.send_file(q.chat_id, f"./majesteuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @MajesteUserBot Tarafından Yapılmıştır..")
 						await q.delete()
-						os.remove(f"./herlockuserbot{dosya_name}.py")
+						os.remove(f"./majesteuserbot{dosya_name}.py")
 						return
 
 					if sec.lower() == "alt":
@@ -66,9 +66,9 @@ async def _(q):
 						import userbot.helpers.p as edit
 						edit.a_(dosya_name, name, liste, slep)
 						#file = await q.client.upload_file(f'./fg{dosya_name}.py')
-						await q.client.send_file(q.chat_id, f"./herlockuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @HerlockUserBot1 Tarafından Yapılmıştır..")
+						await q.client.send_file(q.chat_id, f"./majesteuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @MajesteUserBot Tarafından Yapılmıştır..")
 						await q.delete()
-						os.remove(f"./herlockuserbot{dosya_name}.py")
+						os.remove(f"./majesteuserbot{dosya_name}.py")
 						return
 
 					if sec.lower() =="foto":
@@ -80,9 +80,9 @@ async def _(q):
 						slep = sleep_t if sleep_t else 1.6
 						import userbot.helpers.p as edit
 						edit.r_(dosya_name, name, liste)
-						await q.client.send_file(q.chat_id, f"./herlockuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @HerlockUserBot1 Tarafından Yapılmıştır..")
+						await q.client.send_file(q.chat_id, f"./majesteuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @MajesteUserBot Tarafından Yapılmıştır..")
 						await q.delete()
-						os.remove(f"./herlockuserbot{dosya_name}.py")
+						os.remove(f"./majesteuserbot{dosya_name}.py")
 						return
 
 					if sec.lower() in ["muzik", "müzik"]:
@@ -93,9 +93,9 @@ async def _(q):
 						dosya_name=dosya_name+1
 						import userbot.helpers.p as edit
 						edit.m_(dosya_name, name, liste)
-						await q.client.send_file(q.chat_id, f"./herlockuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @HerlockUserBot1 Tarafından Yapılmıştır..")
+						await q.client.send_file(q.chat_id, f"./majesteuserbot{dosya_name}.py", force_document=True, caption="Bu Plugin @MajesteUserBot Tarafından Yapılmıştır..")
 						await q.delete()
-						os.remove(f"./herlockuserbot{dosya_name}.py")
+						os.remove(f"./majesteuserbot{dosya_name}.py")
 						return
 
 
@@ -112,6 +112,6 @@ async def _(q):
 		return
 
 c_ = c("pluginmaker")
-c_.add_command("pmake", "<pluginin_komutu> <plugin_hızı> <edit/alt/foto/muzik> ", "@HerlockUserBot1 Sizin1 İçin Bir plugin Oluşturur...")
-c_.add_info(' Thx to @SakirBey1').add()
+c_.add_command("pmake", "<pluginin_komutu> <plugin_hızı> <edit/alt/foto/muzik> ", "@MajesteUserBot Sizin1 İçin Bir plugin Oluşturur...")
+c_.add_info(' **Developer By:** \n @SakirBey1').add()
 c_.add()
