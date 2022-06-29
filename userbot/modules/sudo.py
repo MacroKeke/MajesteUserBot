@@ -14,13 +14,13 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 Heroku = heroku3.from_key(HEROKU_APIKEY)
 heroku_api = "https://api.heroku.com"
-herlocksudo = os.environ.get("SUDO_ID", None)
+majestesudo = os.environ.get("SUDO_ID", None)
 
 @register(outgoing=True,
           pattern=r"^.sudoekle")
 async def addsudo(event):
     await event.edit("`Kullanıcı sudo olarak ayarlanıyor`...")
-    herlock = "SUDO_ID"
+    majeste = "SUDO_ID"
     if HEROKU_APPNAME is not None:
         app = Heroku.app(HEROKU_APPNAME)
     else:
@@ -30,15 +30,15 @@ async def addsudo(event):
     if event is None:
         return
     try:
-        herlocktext = await get_user(event)
+        majestetext = await get_user(event)
     except Exception:
         await event.edit("`Lütfen bir kullanıcının mesajına cevap verin.`")
-    if herlocksudo:
-        yenisudo = f"{herlocksudo} {herlocktext}"
+    if majestesudo:
+        yenisudo = f"{majestesudo} {majestetext}"
     else:
-        yenisudo = f"{herlocktext}"
+        yenisudo = f"{majestetext}"
     await event.edit("`Kullanıcı sudo olarak ayarlandı.👌` \n`Botunuz yeniden başlatılıyor...`")
-    heroku_var[herlock] = yenisudo
+    heroku_var[majeste] = yenisudo
 
 
 async def get_user(event):
@@ -66,10 +66,10 @@ async def sudosil(event):
   if event.is_reply:
     id = (await event.get_reply_message()).sender_id
     ad = (await bot.get_entity(id)).first_name
-    op = re.search(str(id), str(herlocksudo))
+    op = re.search(str(id), str(majestesudo))
     if op:
       i = ""
-      esudo = herlocksudo.split(" ")
+      esudo = majestesudo.split(" ")
       esudo.remove(str(id))
       i += str(esudo)
       x = i.replace("[", "")
@@ -94,9 +94,9 @@ async def get_user(event):
             replied_user = await event.client(
                 GetFullUserRequest(previous_message.sender_id)
             )
-    herlockt = replied_user.user.id
-    return herlockt
+    majestet = replied_user.user.id
+    return majestet
     
 @register(incoming=True, from_users=SUDO_ID, pattern="^.salive$")
 async def _(q):
-    await q.client.send_message(q.chat_id,"`Hey Sudom ❤️ \nHerlockUserBot Çalışıyor...`")
+    await q.client.send_message(q.chat_id,"`Hey Sudom ❤️ \nMajesteUserBot Çalışıyor...`")
