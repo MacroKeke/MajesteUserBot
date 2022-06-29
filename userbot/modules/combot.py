@@ -142,4 +142,10 @@ async def fetch_info(chat, event):
         caption += f'{LANG["GOND"]}: <code>{messages_sent_alt}</code> {warn_emoji}\n'
     return caption
     
-CmdHelp('combot').add_command('stats', None, LANG["COMBOT1"]).add()
+CmdHelp('combot').add_command(
+    'stats', None, LANG["COMBOT1"]
+).add_info('Bu Plugin [SakirBey](t.me/SakirBey1) Tarafından Yazılmıştır').add()
+
+
+
+
